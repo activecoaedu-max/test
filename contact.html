@@ -131,8 +131,9 @@
             <textarea id="message" name="message" required placeholder="例如：準備學測但讀書效率很差、想利用下班時間學新技能……"></textarea>
           </div>
           <button type="submit" class="btn btn-primary" style="width:100%;">送出預約需求</button>
-          <p class="form-note">送出即表示同意我們透過您留下的聯絡方式回覆諮詢需求，資料僅用於本次聯繫。此表單目前為前端示意，尚未串接後端寄送或資料庫。</p>
-          <div class="form-success" id="form-success">感謝您的預約！這是示範表單尚未串接實際寄送功能，正式上線前需連接電子郵件或客服系統，教練將於 1 個工作天內與您聯繫確認諮詢時段。</div>
+          <p class="form-note">送出即表示同意我們透過您留下的聯絡方式回覆諮詢需求，資料僅用於本次聯繫，不會做其他用途。</p>
+          <div class="form-success" id="form-success">感謝您的預約！我們已收到您的需求，教練將於 1 個工作天內與您聯繫確認諮詢時段。</div>
+          <div class="form-error" id="form-error">送出失敗，請稍後再試，或直接來信 hello@ace-coaching.example 與我們聯繫。</div>
         </form>
       </div>
 
@@ -183,6 +184,7 @@
   </div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
